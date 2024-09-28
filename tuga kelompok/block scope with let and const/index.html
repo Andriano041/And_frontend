@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>block scopet with let and const</title>
+</head>
+<body>
+    <script> if (true) {
+        let x = 10; // x hanya dapat diakses  dalam blok ini
+        const y = 20; // y juga hanya dapat diakses dalam blok ini
+        console.log("Nilai x:",x); // outpu: 10
+        console.log("Nilai y:",y); // outpu: 20
+    }
+
+    // x dan y tidak dapat diakses di luar blok
+    console.log("nilai x di luar blok:",x); // error
+    </script>
+    
+</body>
+</html>
